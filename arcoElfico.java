@@ -6,9 +6,9 @@ public class arcoElfico extends Arma{
     }
 
     @Override
-    public String atacar(String acao) {
+    public String atacar(String turno) {
         
-        return "Ataque de arco élfico";
+        return turno + "Ataque de arco élfico";
 
     }
 

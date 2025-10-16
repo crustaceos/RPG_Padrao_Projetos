@@ -21,12 +21,16 @@ public class espadaLonga extends Arma{
         super(15, "corte profundo", 0, 10);
     }
 
-    @Override
-    public String atacar(String arma) {
+    //ver pra fazer getter pra printar na tela os atributos das armas 
 
-        return "Ataque com a espada longa";
+    @Override
+    public String atacar(String turno) {
+
+        return turno + "Ataque com a espada longa";
         
     }
+
+    //ver pra fazer um public que retorne as caracteriscas da arma no terminal
 
     
 }
