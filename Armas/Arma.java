@@ -1,3 +1,6 @@
+package Armas;
+import Interfaces.iAcao;
+
 public abstract class Arma implements iAcao {
     
     //Foi criado o construtor para permitir o instânciamento dos atributos nas classes das armas criadas por mim (espada longa etc)

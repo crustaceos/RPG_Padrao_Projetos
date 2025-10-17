@@ -1,3 +1,4 @@
+package Armas;
 public class espadaLonga extends Arma{
 
     //ao criar a classe da arma, ele dá como ofensor a falta dos atributos (dano, mana etc)
@@ -24,9 +25,9 @@ public class espadaLonga extends Arma{
     //ver pra fazer getter pra printar na tela os atributos das armas 
 
     @Override
-    public String atacar(String turno) {
+    public Arma atacar(Arma arma) {
 
-        return turno + "Ataque com a espada longa";
+        return arma;
         
     }
 

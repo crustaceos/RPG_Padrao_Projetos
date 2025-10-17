@@ -1,3 +1,4 @@
+package Armas;
 public class arcoElfico extends Arma{
 
     public arcoElfico() {
@@ -6,9 +7,9 @@ public class arcoElfico extends Arma{
     }
 
     @Override
-    public String atacar(String turno) {
+    public Arma atacar(Arma arma) {
         
-        return turno + "Ataque de arco élfico";
+        return arma;
 
     }
 
