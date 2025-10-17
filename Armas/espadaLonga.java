@@ -20,7 +20,7 @@ public class espadaLonga extends Arma{
 
 
     public espadaLonga() {
-        super(15, "Corte Profundo", 0, 10);
+        super("Espada Longa",15, "Corte Profundo", 0, 10);
     }
 
     @Override

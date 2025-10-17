@@ -18,6 +18,12 @@ public class estrategiaPersonagem {
 
     }
 
+    public String atributosPersonagem(){
+
+        return personagem.descricaoPersonagem();
+
+    }
+
     public Arma acaoTurno(Arma arma){
 
         return this.personagem.atacar(arma);

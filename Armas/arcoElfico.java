@@ -3,7 +3,7 @@ package Armas;
 public class arcoElfico extends Arma {
 
     public arcoElfico() {
-        super(12, "Chuva de Flechas", 15, 8);
+        super("Arco Elfico",12, "Chuva de Flechas", 15, 8);
     }
 
     @Override

@@ -2,10 +2,10 @@ package Personagens;
 
 import Armas.*;
 
-public class arqueiro extends Personagem {
+public class mago extends Personagem {
 
-    public arqueiro() {
-        super("Arqueiro",8, 15, 7, 90, 80, "Esquiva", new String[]{"Arcos", "Adagas"});
+    public mago() {
+        super("Mago",5, 7, 18, 70, 150, "Regeneração de Mana (+10 mana por turno)", new String[]{"Cajados", "Adagas"});
     }
 
     @Override
@@ -15,7 +15,7 @@ public class arqueiro extends Personagem {
         for (String tipo : this.podeUsar) {
             String nomeArma = arma.getClass().getSimpleName().toLowerCase();
 
-            if ((tipo.equalsIgnoreCase("Arcos") && nomeArma.contains("arco")) ||
+            if ((tipo.equalsIgnoreCase("Cajados") && nomeArma.contains("cajado")) ||
                 (tipo.equalsIgnoreCase("Adagas") && nomeArma.contains("adaga"))) {
                 podeUsarArma = true;
                 break;
@@ -23,11 +23,11 @@ public class arqueiro extends Personagem {
         }
 
         if (podeUsarArma) {
-            System.out.println("O arqueiro ataca com " + arma.getClass().getSimpleName() +
+            System.out.println("O mago ataca com " + arma.getClass().getSimpleName() +
                                " causando " + arma.dano + " de dano (" + arma.efeitoEspecial + ")");
             return arma;
         } else {
-            System.out.println("O arqueiro não pode usar " + arma.getClass().getSimpleName());
+            System.out.println("O mago não pode usar " + arma.getClass().getSimpleName());
             return null;
         }
     }

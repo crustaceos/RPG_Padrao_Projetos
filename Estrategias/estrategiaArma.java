@@ -1,26 +1,32 @@
-package Estrategias;
-import Armas.*;
+    package Estrategias;
+    import Armas.*;
 
-public class estrategiaArma{
+    public class estrategiaArma{
 
-    public Arma arma;
+        public Arma arma;
 
-    public void setArma(Arma arma){
+        public void setArma(Arma arma){
 
-        this.arma = arma;
+            this.arma = arma;
 
-    }
+        }
 
-    public estrategiaArma (Arma arma){
+        public estrategiaArma (Arma arma){
 
-        this.setArma(arma);
+            this.setArma(arma);
 
-    }
+        }
 
-    public String acaoTurno(String turno){
+        public String ativarEfeito(String efeito){
 
-        return turno + " " + arma.descricaoArma();
+            return arma.aplicarEfeito();
+
+        }
+
+        public String acaoTurno(String turno){
+
+            return turno + " " + arma.descricaoArma();
+            
+        }
         
     }
-    
-}

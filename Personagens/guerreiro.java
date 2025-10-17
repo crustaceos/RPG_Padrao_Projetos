@@ -5,7 +5,7 @@ import Armas.*;
 public class guerreiro extends Personagem {
 
     public guerreiro() {
-        super(15, 8, 5, 120, 50, "Pele Dura", new String[]{"Espadas", "Machados"});
+        super("Guerreiro",15, 8, 5, 120, 50, "Pele Dura", new String[]{"Espadas", "Machados"});
     }
 
     @Override
@@ -18,6 +18,7 @@ public class guerreiro extends Personagem {
             String nomeArma = arma.getClass().getSimpleName().toLowerCase();
 
             //If para ver, independente da forma que tiver escrito (Sem ser case sensitive) se dentro dos atributos da arma, existe espada ou machado, depois torna a flag como true
+            //Ele ve no nome da classe da arma se contem o nome da arma que pode ser utilizada pelo personagem
             if ((tipo.equalsIgnoreCase("Espadas") && nomeArma.contains("espada")) ||
                 (tipo.equalsIgnoreCase("Machados") && nomeArma.contains("machado"))) {
 
