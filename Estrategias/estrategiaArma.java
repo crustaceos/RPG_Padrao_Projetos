@@ -17,10 +17,10 @@ public class estrategiaArma{
 
     }
 
-    public Arma acaoTurno(Arma arma){
+    public String acaoTurno(String turno){
 
-        return this.arma.atacar(arma);
-
+        return turno + " " + arma.descricaoArma();
+        
     }
     
 }

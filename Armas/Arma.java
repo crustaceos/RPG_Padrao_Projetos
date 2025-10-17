@@ -1,9 +1,8 @@
 package Armas;
+
 import Interfaces.iAcao;
 
 public abstract class Arma implements iAcao {
-    
-    //Foi criado o construtor para permitir o instânciamento dos atributos nas classes das armas criadas por mim (espada longa etc)
 
     public double dano;
     public String efeitoEspecial;
@@ -17,4 +16,15 @@ public abstract class Arma implements iAcao {
         this.requisito = requisito;
     }
 
+    //Para eu printar os atributos da arma:
+    public String descricaoArma() {
+
+        return "Dano: " + dano + 
+               " | Efeito: " + efeitoEspecial + 
+               " | Custo Mana: " + custoMana + 
+               " | Requisito: " + requisito;
+
+    }
+
+    public abstract String aplicarEfeito();
 }

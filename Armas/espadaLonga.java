@@ -18,20 +18,20 @@ public class espadaLonga extends Arma{
 
     //Como deve ficar a implementação dos atributos para a classe:
 
-    public espadaLonga() {
-        super(15, "corte profundo", 0, 10);
-    }
 
-    //ver pra fazer getter pra printar na tela os atributos das armas 
+    public espadaLonga() {
+        super(15, "Corte Profundo", 0, 10);
+    }
 
     @Override
     public Arma atacar(Arma arma) {
-
-        return arma;
-        
+        return this;
     }
 
-    //ver pra fazer um public que retorne as caracteriscas da arma no terminal
+    @Override
+    public String aplicarEfeito() {
+        return "Efeito especial ativado: Sangramento (30% chance, 5 de dano por 3 turnos)";
+    }
 
     
 }
